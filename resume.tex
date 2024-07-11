@@ -1,0 +1,231 @@
+%-------------------------
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    \textbf{\Huge Arnav Surve} \\ \vspace{1pt}
+    \small 916-472-9444 $|$ \href{mailto:arnavsurve@gmail.com}{\underline{arnavsurve@gmail.com}} $|$ 
+    \href{https://linkedin.com/in/arnavsurve/}{\underline{linkedin.com/in/arnavsurve}} $|$
+    \href{https://github.com/arnavsurve}{\underline{github.com/arnavsurve}}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {California State University - Sacramento}{Sacramento, CA}
+      {Bachelor of Science, Computer Science}{Aug. 2024 -- May 2026}
+    \resumeSubheading
+      {Purdue University}{West Lafayette, IN}
+      {Bachelor of Science, Cybersecurity -- Dean's List, Fall 2023}{Aug. 2022 -- May 2024}
+  \resumeSubHeadingListEnd
+
+%-----------RELEVANT COURSEWORK-----------
+  \section{Relevant Coursework}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+        {CNIT 27000 - Cybersecurity Fundamentals}{Ubuntu, Wireshark, Nmap, SQL, PHP}
+      \resumeProjectHeading
+        {CNIT 25501 - Object Oriented Programming}{Java, JavaSwing}
+    \resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Information Technology Intern}{June 2024 -- Aug. 2024}
+      {MITER Brands -- Milgard Manufacturing}{Tacoma, WA}
+      \resumeItemListStart
+        \resumeItem{Performed granular analysis of server, application, and network monitors}
+        \resumeItem{Authored a proposal and plan of action for tuning and optimizing alerts flow \textbf{reducing notification fatigue by $\sim$ 60\%}}
+        \resumeItem{Developed a microservice in Golang to streamline Cisco Unified Communications Manager (CUCM) user and extension provisioning}
+        \resumeItem{Utilized Cisco AXL API calls to \textbf{reduce context switching for IT Tech III members by $\sim$ 70\%}}
+      \resumeItemListEnd
+      
+% -----------Multiple Positions Heading-----------
+%    \resumeSubSubheading
+%     {Software Engineer I}{Oct 2014 - Sep 2016}
+%     \resumeItemListStart
+%        \resumeItem{Apache Beam}
+%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
+%     \resumeItemListEnd
+%    \resumeSubHeadingListEnd
+%-------------------------------------------
+
+    \resumeSubheading
+      {Undergraduate Researcher}{May 2024 -- Aug. 2024}
+      {NASA California Space Grant Consortium}{Sacramento, CA}
+      \resumeItemListStart
+        \resumeItem{Developed a classification model to predict seismic activity using infrasound frequencies}
+        \resumeItem{Constructed an infrasound sensor array and monitor using Raspberry Pi and Amphenol Board Mount Sensors}
+    \resumeItemListEnd
+
+    \resumeSubheading
+      {Undergraduate Data Science Researcher}{Aug. 2022 -- May 2023}
+      {Purdue University Office of Engagement}{West Lafayette, IN}
+      \resumeItemListStart
+        \resumeItem{Developed a web application for student and faculty to apply for research grants}
+        \resumeItem{Implemented REST API endpoints using ExpressJS}
+        \resumeItem{Architected an ORM database to handle user data and grant applications in PostgreSQL}
+        \resumeItem{Developed frontend views using React.js and TailwindCSS}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {IT Support Desk Intern}{March 2021 -- Aug. 2021}
+      {California Department of Technology}{Sacramento, CA}
+      \resumeItemListStart
+        \resumeItem{Imaged and deployed 60 desktop computers with Windows 10 and Office 365}
+        \resumeItem{\textbf{Optimized PC cataloging and inventory management by $\sim$ 30\%} using Excel and Powershell}
+        \resumeItem{Configured 30 cubicles with network and power connections as hotels in preparation for remote work following COVID-19}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------
+% \section{Projects}
+%     \resumeSubHeadingListStart
+%       \resumeProjectHeading
+%           {\textbf{Gitlytics} $|$ \emph{Python, Flask, React, PostgreSQL, Docker}}{June 2020 -- Present}
+%           \resumeItemListStart
+%             \resumeItem{Developed a full-stack web application using with Flask serving a REST API with React as the frontend}
+%             \resumeItem{Implemented GitHub OAuth to get data from user’s repositories}
+%             \resumeItem{Visualized GitHub data to show collaboration}
+%             \resumeItem{Used Celery and Redis for asynchronous tasks}
+%           \resumeItemListEnd
+%       \resumeProjectHeading
+%           {\textbf{Simple Paintball} $|$ \emph{Spigot API, Java, Maven, TravisCI, Git}}{May 2018 -- May 2020}
+%           \resumeItemListStart
+%             \resumeItem{Developed a Minecraft server plugin to entertain kids during free time for a previous job}
+%             \resumeItem{Published plugin to websites gaining 2K+ downloads and an average 4.5/5-star review}
+%             \resumeItem{Implemented continuous delivery using TravisCI to build the plugin upon new a release}
+%             \resumeItem{Collaborated with Minecraft server administrators to suggest features and get feedback about the plugin}
+%           \resumeItemListEnd
+%     \resumeSubHeadingListEnd
+
+
+
+%
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Python, Java, C, SQL, Golang, \LaTeX, Javascript, HTML/CSS, Swift} \\
+     \textbf{Frameworks}{: Agile, PostgreSQL, MySQL, Svelte, Node.js/ExpressJS} \\
+     \textbf{Tools}{: Vim/Neovim, Emacs, Git, Bash/ZSH, Docker, Jupyter Notebooks, VS Code, Intellij, XCode} \\
+     \textbf{Libraries}{: pandas, NumPy, Matplotlib}
+    }}
+ \end{itemize}
+
+
+%-------------------------------------------
+\end{document}
