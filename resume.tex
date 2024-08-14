@@ -50,6 +50,8 @@
 \raggedright
 \setlength{\tabcolsep}{0in}
 
+\setlength{\footskip}{4.08003pt}
+
 % Sections formatting
 \titleformat{\section}{
   \vspace{-4pt}\scshape\raggedright\large
@@ -111,11 +113,10 @@
 
 \begin{center}
     \textbf{\Huge Arnav Surve} \\ \vspace{1pt}
-    \small 916-472-9444 $|$ \href{mailto:arnavsurve@gmail.com}{\underline{arnavsurve@gmail.com}} $|$ 
+    \small 916-472-9444 $|$ \href{mailto:arnav@surve.dev}{\underline{arnav@surve.dev}} $|$ 
     \href{https://linkedin.com/in/arnavsurve/}{\underline{linkedin.com/in/arnavsurve}} $|$
     \href{https://github.com/arnavsurve}{\underline{github.com/arnavsurve}}
 \end{center}
-
 
 %-----------EDUCATION-----------
 \section{Education}
@@ -128,46 +129,47 @@
       {Bachelor of Science, Cybersecurity -- Dean's List, Fall 2023}{Aug. 2022 -- May 2024}
   \resumeSubHeadingListEnd
 
-
 %
 %-----------SKILLS-----------
 \section{Technical Skills}
  \begin{itemize}[leftmargin=0.15in, label={}]
     \small{\item{
-     \textbf{Languages}{: Python, Java, C, SQL, Go, \LaTeX, Javascript, HTML/CSS} \\
-     \textbf{Frameworks}{: Agile, PostgreSQL, Svelte, Node.js/ExpressJS} \\
-     \textbf{Tools}{: Git, Vim, AWS EC2/S3/IAM/Lambda, Bash, Docker, Jupyter Notebooks} \\
+     \textbf{Languages}{: Python, Java, C, SQL, Go, Bash, \LaTeX, Javascript, HTML/CSS} \\
+     \textbf{Frameworks}{: Agile, PostgreSQL, Svelte, Node.js, Express.jss} \\
+     \textbf{Tools}{: Git, Vim, AWS (S3, EC2, Lambda), Bash, Docker, Jupyter Notebooks} \\
      \textbf{Libraries}{: pandas, NumPy, Matplotlib, InfraPy, SciKit-Learn}
     }}
  \end{itemize}
 
-
 % -----------PROJECTS-----------
 \section{Projects}
-    \resumeSubHeadingListStart
-      \resumeProjectHeading
-          {\textbf{LastFM-crawl} $|$ \emph{Python, Flask, AWS Lambda, Docker}}{July 2024}
-          \resumeItemListStart
-            \resumeItem{Developed a wrapper for the Last.fm API as a modular way to embed Last.fm stats in a website or application.}
-            \resumeItem{Implemented API endpoints to serve JSON data (e.g. listening history, followers/following, and aggregated daily/monthly/yearly listening stats).}
-            \resumeItem{Containerized using Docker and created a CI/CD pipeline with Zappa for seamless testing and deployment.}
-            \resumeItem{Deployed to AWS Lambda for serverless endpoint access, mitigating $\sim$\$15 in monthly costs compared to AWS EC2.}
-          \resumeItemListEnd
-    \resumeSubHeadingListEnd
+  \resumeSubHeadingListStart
+    \resumeProjectHeading
+        {\textbf{LastFM-crawl} $|$ \emph{Python, Flask, AWS Lambda, Docker}}{July 2024}
+        \resumeItemListStart
+          \resumeItem{Developed a wrapper for the Last.fm API as a modular way to embed Last.fm stats in a website or application.}
+          \resumeItem{Implemented API endpoints to serve JSON data (e.g. listening history, followers/following, and aggregated daily/monthly/yearly listening stats).}
+          \resumeItem{Containerized using Docker and created a CI/CD pipeline with Zappa for seamless testing and deployment.}
+          \resumeItem{Deployed to AWS Lambda for serverless endpoint access, mitigating $\sim$\$15 in monthly costs compared to AWS EC2.}
+        \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+\vspace{-20pt}
 
 %-----------RELEVANT COURSEWORK-----------
-  \section{Relevant Coursework}
-    \resumeSubHeadingListStart
-      \resumeProjectHeading
-        {CSC 20 - Programming Concepts and Methodology II}{Java, OOP, Big-O}
-      \resumeProjectHeading
-        {CSC 35 - Introduction to Computer Architecture}{x86 Assembly, UNIX Shell}
-      \resumeProjectHeading
-        {CNIT 27000 - Cybersecurity Fundamentals}{Ubuntu, Wireshark, Nmap, SQL}
-      \resumeProjectHeading
-        {CNIT 27100 - Cybersecurity Fundamentals II}{AWS (IAM, EC2, S3)}
-    \resumeSubHeadingListEnd
+\section{Relevant Coursework}
+  \resumeSubHeadingListStart
+    \resumeProjectHeading
+      {CSC 20 - Programming Concepts and Methodology II}{Java, OOP, Big-O}
+    \resumeProjectHeading
+      {CSC 35 - Introduction to Computer Architecture}{x86 Assembly, UNIX Shell}
+    \resumeProjectHeading
+      {CNIT 27000 - Cybersecurity Fundamentals}{Ubuntu, Wireshark, Nmap, SQL}
+    \resumeProjectHeading
+      {CNIT 27100 - Cybersecurity Fundamentals II}{AWS (IAM, EC2, S3)}
+  \resumeSubHeadingListEnd
 
+\vspace{1pt}
 
 %-----------EXPERIENCE-----------
 \section{Experience}
@@ -178,9 +180,9 @@
       {MITER Brands -- Milgard Manufacturing}{Tacoma, WA}
       \resumeItemListStart
         \resumeItem{Conducted a granular analysis of IT server, application, and network monitoring landscape.}
-        \resumeItem{Composed a proposal to optimize alerts flow for greater scalability and quicker incident resolution, reducing average inbox volumes by $\sim$60\%.}
+        \resumeItem{Composed a proposal to optimize alerts flow for greater scalability and quicker incident resolution, reducing average inbox volumes by \textbf{$\sim$60\%.}}
         \resumeItem{Developed 5 Site24x7 monitors to track latency metrics for Infor Cloud REST API endpoints.}
-        \resumeItem{Overhauled Site24x7 monitor and alert groups, escalation policies, and alert thresholds to mitigate tech debt and improve efficiency by $\sim$20\%.}
+        \resumeItem{Overhauled Site24x7 monitor and alert groups, escalation policies, and alert thresholds to mitigate tech debt and improve efficiency by \textbf{$\sim$20\%.}}
         \resumeItem{Automated compliance audits for Active Directory controlled accounts using PowerShell scripting.}
       \resumeItemListEnd
       
@@ -198,7 +200,7 @@
       {Undergraduate Researcher}{May 2024 -- Aug. 2024}
       {NASA California Space Grant Consortium}{Sacramento, CA}
       \resumeItemListStart
-        \resumeItem{Developed unsupervised classification models employing K-Means clustering and agglomerative clustering for volcanic activity prediction, utilizing training data from Boise State University's infrasound data repository with a maximum (0.47) silhouette score.}
+      \resumeItem{Developed unsupervised classification models employing K-Means clustering and agglomerative clustering for volcanic activity prediction, utilizing training data from Boise State University's infrasound data repository with a maximum silhouette score of \textbf{0.47}.}
         \resumeItem{Constructed an infrasound sensor array and monitor using Amphenol Board Mount Sensors and Raspberry Pi.}
     \resumeItemListEnd
 
@@ -207,8 +209,9 @@
       {Purdue University Office of Engagement}{West Lafayette, IN}
       \resumeItemListStart
       \resumeItem{Worked in a 10 person team using Agile methodology to develop a web application to enable research grant applications.}
+      \resumeItem{Developed 8 REST API endpoints using Express.js to enable CRUD functionality}
       \resumeItem{Implemented federated authentication using Purdue University Single Sign-On.}
-        \resumeItem{Architected an ORM database to handle user data and grant applications using PostgreSQL.}
+        \resumeItem{Architected an ORM database to handle user PII and grant applications using PostgreSQL.}
         \resumeItem{Utilized Docker for containerization and ease in deployment of backend services.}
       \resumeItemListEnd
 
