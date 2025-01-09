@@ -38,11 +38,11 @@
 \renewcommand{\footrulewidth}{0pt}
 
 % Adjust margins
-\addtolength{\oddsidemargin}{-0.5in}
-\addtolength{\evensidemargin}{-0.5in}
-\addtolength{\textwidth}{1in}
-\addtolength{\topmargin}{-.5in}
-\addtolength{\textheight}{1.0in}
+\addtolength{\oddsidemargin}{-0.7in}
+\addtolength{\evensidemargin}{-0.7in}
+\addtolength{\textwidth}{1.4in}
+\addtolength{\topmargin}{-0.8in}
+\addtolength{\textheight}{1.6in}
 
 \urlstyle{same}
 
@@ -114,7 +114,9 @@
 \begin{center}
     \textbf{\Huge Arnav Surve} \\ \vspace{0pt}
     \vspace{5pt}
-    \small 916-472-9444 $|$ \href{mailto:arnav@surve.dev}{\underline{arnav@surve.dev}} $|$ 
+    \small 916-472-9444 $|$
+    Sacramento, CA $|$
+    \href{mailto:arnav@surve.dev}{\underline{arnav@surve.dev}} $|$ 
     \href{https://linkedin.com/in/arnavsurve/}{\underline{linkedin.com/in/arnavsurve}} $|$
     \href{https://github.com/arnavsurve}{\underline{github.com/arnavsurve}}
 \end{center}
@@ -126,7 +128,7 @@
       {California State University - Sacramento}{Sacramento, CA}
       {Bachelor of Science, Computer Science}{Aug. 2024 -- May 2026}
       \resumeProjectHeading
-      {CSC 20 - Java OOP, CSC 35 - Computer Architecture}{}
+      {Data Structures \& Algorithms, Systems Programming, x86 Computer Architecture, Java OOP}{}
 
     \vspace{3pt}
 
@@ -134,10 +136,22 @@
       {Purdue University}{West Lafayette, IN}
       {Bachelor of Science, Cybersecurity -- Dean's List, Fall 2023}{Aug. 2022 -- May 2024}
       \resumeProjectHeading
-      {CNIT 27000 \& 27100 - Cybersecurity Fundamentals I \& II, CNIT 24200 - System Administration}{}
+      {Cybersecurity Fundamentals I \& II, System Administration}{}
   \resumeSubHeadingListEnd
 
-\vspace{-12pt}
+
+%-----------SKILLS-----------
+\section{Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Python, Go, PostgreSQL, MySQL, Javascript, HTML/CSS, Java} \\
+     \textbf{Frameworks}{: Echo, GORM, FastAPI, SQLAlchemy, Pydantic, Pytest, React, Node.js, Next.js, Agile Scrum} \\
+     \textbf{Tools}{: Git, GitHub, Vim, AWS, Docker, Redis, Nginx, Makefile, Prometheus, Grafana} \\
+     \textbf{Related}{: Debian/RHELinux, Software Engineering, DevOps, Distributed Systems, Cloud Computing, Version Control, Documentation, Testing, Back-End, Full-Stack} \\
+    }}
+ \end{itemize}
+
+\vspace{-15pt}
 
 %-----------EXPERIENCE-----------
 \section{Experience}
@@ -147,10 +161,10 @@
       {IT Infrastructure Intern}{June 2024 -- Aug. 2024}
       {MITER Brands -- Milgard Manufacturing}{Tacoma, WA}
       \resumeItemListStart
-        \resumeItem{Analyzed IT server, application, and network monitoring landscape.}
-        \resumeItem{Composed a proposal to optimize monitoring alerts flow for greater scalability and quicker incident resolution, reducing average inbox volumes by \textbf{$\sim$60\%.}}
-        \resumeItem{Developed Site24x7 monitors to track latency metrics for Infor Cloud REST API endpoints.}
-        \resumeItem{Overhauled Site24x7 monitor and alert groups, escalation policies, and alert thresholds to mitigate tech debt and improve efficiency by \textbf{$\sim$20\%.}}
+      \resumeItem{Delivered a comprehensive proposal to optimize monitoring pipelines, reducing average alert redundancy by 60\%}
+      \resumeItem{Cross-communicated between 6 teams across 2 business units to gather insights and consensus on optimization initiative.}
+        \resumeItem{Developed monitors for REST API endpoints, identifying discrepancies resulting in an 85\% decrease in latencies.}
+        \resumeItem{Analyzed monitoring groups, escalation policies, and alert thresholds to address tech debt and improve efficiency by 20\%.}
         \resumeItem{Automated compliance audits for Active Directory controlled accounts using PowerShell scripting.}
       \resumeItemListEnd
       
@@ -165,22 +179,22 @@
 %-------------------------------------------
 
     \resumeSubheading
-      {Undergraduate Researcher}{May 2024 -- Aug. 2024}
+      {Undergraduate Research Assistant}{March 2024 - May 2024}
       {NASA California Space Grant Consortium}{Sacramento, CA}
       \resumeItemListStart
-      \resumeItem{Developed unsupervised classification models employing K-Means clustering and agglomerative clustering for volcanic activity prediction using infrasound frequencies, utilizing datasets from Boise State University Scholarworks with a maximum silhouette score of \textbf{0.47}.}
-        \resumeItem{Constructed an infrasound sensor array and monitor using Amphenol Board Mount Sensors and Raspberry Pi.}
+        \resumeItem{Constructed an infrasound frequency monitor using Raspberry Pi, enabling real-time aggregation of seismic and atmospheric activity with a 95\% uptime in deployment.}
+        \resumeItem{Implemented k-means clustering and autoencoder neural networks using scikit-learn and Tensorflow on over 25 million data points, predicting volcanic activity with a silhouette score of 0.47.}
     \resumeItemListEnd
 
     \resumeSubheading
-      {Backend Developer}{Aug. 2022 -- May 2023}
+      {Software Engineer}{Aug. 2022 -- May 2023}
       {Purdue University Office of Engagement}{West Lafayette, IN}
       \resumeItemListStart
-      \resumeItem{Worked in a 10 person team using Agile, developing a full stack web app for research grant applications.}
-      \resumeItem{Developed RESTful API endpoints using Express.js to enable CRUD functionality.}
-      \resumeItem{Implemented federated authentication using Purdue University Single Sign-On.}
-        \resumeItem{Architected a PostgreSQL database using Prisma ORM to handle user PII and grant applications.}
-        \resumeItem{Utilized Docker for containerization and deployment of application on Purdue servers.}
+      \resumeItem{Worked in a 10 person team using Agile Scrum, delivering a full stack web app for research grant applications.}
+      \resumeItem{Developed RESTful API endpoints using Express.js to enable CRUD functionality and authentication.}
+      \resumeItem{Implemented federated session authentication using Purdue University in-house Single Sign-On APIs.}
+      \resumeItem{Architected and implemented a PostgreSQL database using Prisma ORM to handle user PII and grant applications.}
+      \resumeItem{Utilized Docker for containerization and delivery of application to university server cluster.}
       \resumeItemListEnd
 
     % \resumeSubheading
@@ -197,40 +211,32 @@
 % -----------PROJECTS-----------
 \section{Projects}
   \resumeSubHeadingListStart
-    \resumeProjectHeading
-        {\textbf{taskman} $|$ \emph{Go, Gin, PostgreSQL, Docker}}{Aug. 2024 - Current}
+\resumeProjectHeading
+{\href{https://ynot.lol}{{\textbf{Social Network}}} $|$ \emph{Python, FastAPI, JavaScript, React, Docker, AWS, PostgreSQL}}
+  {2024 - Present}
         \resumeItemListStart
-          \resumeItem{Independently developed a full stack CLI task management solution using Go and the Gin web framework,
-            providing RESTful APIs for task and user management.}
-          \resumeItem{Designed PostgreSQL database schemas, including user-specific tables with foreign key relationships.}
-          \resumeItem{Implemented user session authentication and authorization using JWT, securing access to protected endpoints.}
-          \resumeItem{Created robust error handling and validation mechanisms for API endpoints, enhancing reliability and UX.}
-          \resumeItem{Automated build, testing, and deployment process using Makefile and containerized backend service with Docker.}
+            \resumeItem{Collaborated with LSD.so on a decentralized social network built on the AT Protocol by Bluesky.}
+            \resumeItem{Developed FastAPI/PostgreSQL backend and static React frontend on Amazon EC2 using Docker.}
+	    \resumeItem{Implemented ATProto OAuth2.0 session cookie authentication and live global WebSocket feed.}
+	    \resumeItem{Implemented embedded content parsing using LSD.so web SQL for user behavior data pipelines.}
+    	    \resumeItem{Architected CI/CD pipeline with GitHub actions and AWS CodeDeploy and utilized Pytest and Jest for CI validation and integration testing.}
         \resumeItemListEnd
 
     \resumeProjectHeading
-        {\textbf{lastfm-crawl} $|$ \emph{Python, Flask, AWS Lambda, Docker}}{July 2024}
+    {\textbf{Distributed Job Scheduler} $|$ \emph{Go, GORM, PostgreSQL, Redis, AWS, Docker, Kubernetes}}{2024 - 2025}
         \resumeItemListStart
-          \resumeItem{Developed a wrapper for the Last.fm API as an easier way to embed Last.fm stats in a website or application.}
-          \resumeItem{Implemented API endpoints to serve JSON data (e.g. listening history, followers/following, and aggregated daily/monthly/yearly listening stats).}
-          \resumeItem{Containerized using Docker and created a CI/CD pipeline with Zappa for seamless testing and deployment.}
-          \resumeItem{Deployed to AWS Lambda for serverless endpoint access, mitigating \textbf{$\sim$\$15} in monthly costs compared to EC2.}
+        \resumeItem{Created a distributed job scheduling platform to orchestrate jobs across nodes in a cluster environment.}
+	\resumeItem{Integrated Redis for job queuing, caching, and message passing, ensuring throughput and low-latencies across a cluster.}
+	\resumeItem{Developed automatic horizontal scaling mechanisms to dynamically resize worker pool via scaling action triggers and Kubernetes orchestration.}
+	\resumeItem{Implemented leader election, consensus algorithms, and retry policies for fault tolerance and consistency.}
+	\resumeItem{Wrote RESTful APIs for job creation, monitoring, and administrative functions via HTTP requests.}
         \resumeItemListEnd
+
   \resumeSubHeadingListEnd
 
 
 
 %
-%-----------SKILLS-----------
-\section{Skills}
- \begin{itemize}[leftmargin=0.15in, label={}]
-    \small{\item{
-     \textbf{Languages}{: Python, Go, SQL, Bash, Java, \LaTeX, Javascript, HTML/CSS} \\
-     \textbf{Frameworks}{: Flask, Gin, Svelte, Node.js, Agile} \\
-     \textbf{Tools}{: Git, Vim, Postman, AWS (S3, EC2, Lambda), Bash, Docker, Jupyter Notebooks} \\
-     \textbf{Libraries}{: pandas, NumPy, SciKit-Learn}
-    }}
- \end{itemize}
 
 %-------------------------------------------
 \end{document}
