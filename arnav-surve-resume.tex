@@ -127,16 +127,9 @@
     \resumeSubheading
       {California State University - Sacramento}{Sacramento, CA}
       {Bachelor of Science, Computer Science}{Aug. 2024 -- May 2026}
-      \resumeProjectHeading
-      {Data Structures \& Algorithms, Systems Programming, x86 Computer Architecture, Java OOP}{}
-
-    \vspace{3pt}
-
     \resumeSubheading
       {Purdue University}{West Lafayette, IN}
       {Bachelor of Science, Cybersecurity -- Dean's List, Fall 2023}{Aug. 2022 -- May 2024}
-      \resumeProjectHeading
-      {Cybersecurity Fundamentals I \& II, System Administration}{}
   \resumeSubHeadingListEnd
 
 
@@ -144,10 +137,11 @@
 \section{Skills}
  \begin{itemize}[leftmargin=0.15in, label={}]
     \small{\item{
-     \textbf{Languages}{: Python, Go, PostgreSQL, MySQL, Javascript, HTML/CSS, Java} \\
-     \textbf{Frameworks}{: Echo, GORM, FastAPI, SQLAlchemy, Pydantic, Pytest, React, Node.js, Next.js, Agile Scrum} \\
-     \textbf{Tools}{: Git, GitHub, Vim, AWS, Docker, Redis, Nginx, Makefile, Prometheus, Grafana} \\
-     \textbf{Related}{: Debian/RHELinux, Software Engineering, DevOps, Distributed Systems, Cloud Computing, Version Control, Documentation, Testing, Back-End, Full-Stack} \\
+     \textbf{Languages}{: Go, Python, TypeScript, JavaScript, SQL, PostgreSQL, Java, HTML/CSS, YAML, JSON, Bash} \\
+     \textbf{Frameworks}{: React, Node.js, FastAPI, Express.js, Echo, GORM, GraphQL, Prisma, Model Context Protocol} \\
+     \textbf{Cloud/DevOps}{: AWS, Lambda, Glue, RDS, ECR, EKS, Kubernetes, Docker, Terraform, Git, GitHub Actions} \\
+     \textbf{Data/Blockchain}{: PostgreSQL, Redis, ETL, VSAM, Blockchain, Smart Contracts, Tezos, NFTs, Web3} \\
+     \textbf{Practices}{: CI/CD, Microservices, REST APIs, Agile/Scrum, DevOps, Monitoring, IaC} \\
     }}
  \end{itemize}
 
@@ -158,43 +152,32 @@
   \resumeSubHeadingListStart
 
     \resumeSubheading
+      {Software Engineer Intern}{March 2025 -- Present}
+      {California Department of Motor Vehicles}{Sacramento, CA}
+      \resumeItemListStart
+        \resumeItem{Architected and deployed end-to-end ETL pipeline processing FTP drops of mainframe VSAM dataset exports for vehicle registrations and driver licenses, successfully migrating 197 million records to production RDS PostgreSQL database serving California Highway Patrol, FBI, and other federal law-enforcement agencies.}
+        \resumeItem{Developed comprehensive data processing solution using AWS Lambda and Glue for initial bulk load and daily synchronization pipelines handling 200-300k daily records with upsert/delete operations.}
+        \resumeItem{Implemented entire infrastructure as code using Terraform, managing deployment lifecycle across dev, UAT, and production environments while supporting comprehensive UAT testing throughout development cycle.}
+        \resumeItem{Refactored and deployed distributed microservices blockchain system using TypeScript monorepo with 5 interconnected Tezos smart contracts (FA2 NFTs), implementing multitenant role-based access control and chain bridge worker pools for database-blockchain synchronization.}
+        \resumeItem{Deployed self-hosted private Tezos blockchain node infrastructure on Kubernetes using ECR and EKS, orchestrating containerized microservices with production-ready CI/CD pipelines and comprehensive monitoring.}
+      \resumeItemListEnd
+
+    \resumeSubheading
       {IT Infrastructure Intern}{June 2024 -- Aug. 2024}
       {MITER Brands -- Milgard Manufacturing}{Tacoma, WA}
       \resumeItemListStart
-      \resumeItem{Delivered a comprehensive proposal to optimize monitoring pipelines, reducing average alert redundancy by 60\%}
-      \resumeItem{Cross-communicated between 6 teams across 2 business units to gather insights and consensus on optimization initiative.}
-        \resumeItem{Developed monitors for REST API endpoints, identifying discrepancies resulting in an 85\% decrease in latencies.}
-        \resumeItem{Analyzed monitoring groups, escalation policies, and alert thresholds to address tech debt and improve efficiency by 20\%.}
-        \resumeItem{Automated compliance audits for Active Directory controlled accounts using PowerShell scripting.}
+      \resumeItem{Implemented APM pipeline optimizations in Site24x7 and New Relic, reducing alert redundancy by 60\% across 6 teams and 2 business units.}
+      \resumeItem{Developed REST API endpoint monitors identifying critical discrepancies, resulting in an average 20\% latency reduction due to increased observability.}
+      \resumeItem{Automated Active Directory compliance audits using PowerShell scripting, improving operational efficiency by 20\%.}
       \resumeItemListEnd
-      
-% -----------Multiple Positions Heading-----------
-%    \resumeSubSubheading
-%     {Software Engineer I}{Oct 2014 - Sep 2016}
-%     \resumeItemListStart
-%        \resumeItem{Apache Beam}
-%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
-%     \resumeItemListEnd
-%    \resumeSubHeadingListEnd
-%-------------------------------------------
-
-    \resumeSubheading
-      {Undergraduate Research Assistant}{March 2024 - May 2024}
-      {NASA California Space Grant Consortium}{Sacramento, CA}
-      \resumeItemListStart
-        \resumeItem{Constructed an infrasound frequency monitor using Raspberry Pi, enabling real-time aggregation of seismic and atmospheric activity with a 95\% uptime in deployment.}
-        \resumeItem{Implemented k-means clustering and autoencoder neural networks using scikit-learn and Tensorflow on over 25 million data points, predicting volcanic activity with a silhouette score of 0.47.}
-    \resumeItemListEnd
 
     \resumeSubheading
       {Software Engineer}{Aug. 2022 -- May 2023}
       {Purdue University Office of Engagement}{West Lafayette, IN}
       \resumeItemListStart
-      \resumeItem{Worked in a 10 person team using Agile Scrum, delivering a full stack web app for research grant applications.}
-      \resumeItem{Developed RESTful API endpoints using Express.js to enable CRUD functionality and authentication.}
-      \resumeItem{Implemented federated session authentication using Purdue University in-house Single Sign-On APIs.}
-      \resumeItem{Architected and implemented a PostgreSQL database using Prisma ORM to handle user PII and grant applications.}
-      \resumeItem{Utilized Docker for containerization and delivery of application to university server cluster.}
+      \resumeItem{Delivered full-stack research grant application platform using Agile Scrum methodology in 10-person development team.}
+      \resumeItem{Built RESTful API with Express.js and PostgreSQL using Prisma ORM, implementing federated SSO authentication.}
+      \resumeItem{Containerized application with Docker for deployment to university server cluster infrastructure.}
       \resumeItemListEnd
 
     % \resumeSubheading
@@ -211,27 +194,21 @@
 % -----------PROJECTS-----------
 \section{Projects}
   \resumeSubHeadingListStart
-\resumeProjectHeading
-{\href{https://ynot.lol}{{\textbf{Social Network}}} $|$ \emph{Python, FastAPI, JavaScript, React, Docker, AWS, PostgreSQL}}
-  {2024 - Present}
+    \resumeProjectHeading
+    {\textbf{Grace Programming Language} $|$ \emph{Go, Compiler Design, Type Systems, Code Generation}}{2024}
         \resumeItemListStart
-            \resumeItem{Collaborated with LSD.so on a decentralized social network built on the AT Protocol by Bluesky.}
-            \resumeItem{Developed FastAPI/PostgreSQL backend and static React frontend on Amazon EC2 using Docker.}
-	    \resumeItem{Implemented ATProto OAuth2.0 session cookie authentication and live global WebSocket feed.}
-	    \resumeItem{Implemented embedded content parsing using LSD.so web SQL for user behavior data pipelines.}
-    	    \resumeItem{Architected CI/CD pipeline with GitHub actions and AWS CodeDeploy and utilized Pytest and Jest for CI validation and integration testing.}
+        \resumeItem{Built statically-typed programming language (8,407 LOC) that compiles to readable COBOL, featuring complete compiler toolchain with lexer, recursive descent parser using Pratt parsing, and comprehensive AST for semantic analysis.}
+        \resumeItem{Designed novel width-aware type system with compile-time COBOL PIC clause validation, automatic width inference for arithmetic expressions, and overflow detection for mainframe compatibility.}
+        \resumeItem{Implemented sophisticated code generation translating modern constructs (procedures, records, type inference) into structured COBOL with automatic temporary variable management and DECLARATIVES sections.}
         \resumeItemListEnd
 
     \resumeProjectHeading
-    {\textbf{Distributed Job Scheduler} $|$ \emph{Go, GORM, PostgreSQL, Redis, AWS, Docker, Kubernetes}}{2024 - 2025}
+    {\textbf{Grace Infrastructure Platform} $|$ \emph{Go, Zowe CLI, YAML, DAG Execution, Mainframe Integration}}{2024}
         \resumeItemListStart
-        \resumeItem{Created a distributed job scheduling platform to orchestrate jobs across nodes in a cluster environment.}
-	\resumeItem{Integrated Redis for job queuing, caching, and message passing, ensuring throughput and low-latencies across a cluster.}
-	\resumeItem{Developed automatic horizontal scaling mechanisms to dynamically resize worker pool via scaling action triggers and Kubernetes orchestration.}
-	\resumeItem{Implemented leader election, consensus algorithms, and retry policies for fault tolerance and consistency.}
-	\resumeItem{Wrote RESTful APIs for job creation, monitoring, and administrative functions via HTTP requests.}
+        \resumeItem{Engineered hybrid mainframe-cloud orchestration platform (8,366 LOC) modernizing COBOL workflows through declarative YAML configuration and Infrastructure-as-Code principles.}
+        \resumeItem{Built sophisticated DAG execution engine with concurrent job processing, dependency resolution, and intelligent state management for complex multi-step mainframe-cloud workflows.}
+        \resumeItem{Implemented extensible plugin architecture supporting multiple job handlers (compile, linkedit, execute, shell) with automatic cleanup of temporary mainframe datasets and comprehensive error handling.}
         \resumeItemListEnd
-
   \resumeSubHeadingListEnd
 
 
