@@ -106,10 +106,6 @@
 \begin{document}
 
 %----------HEADING----------
-% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
-%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
-%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
-% \end{tabular*}
 
 \begin{center}
     \textbf{\Huge Arnav Surve} \\ \vspace{0pt}
@@ -133,19 +129,6 @@
   \resumeSubHeadingListEnd
 
 
-%-----------SKILLS-----------
-\section{Skills}
- \begin{itemize}[leftmargin=0.15in, label={}]
-    \small{\item{
-     \textbf{Languages}{: Go, Python, TypeScript, JavaScript, SQL, PostgreSQL, Java, HTML/CSS, YAML, JSON, Bash} \\
-     \textbf{Frameworks}{: React, Node.js, FastAPI, Express.js, Echo, GORM, GraphQL, Prisma, Model Context Protocol} \\
-     \textbf{Cloud/DevOps}{: AWS, Lambda, Glue, RDS, ECR, EKS, Kubernetes, Docker, Terraform, Git, GitHub Actions} \\
-     \textbf{Data/Blockchain}{: PostgreSQL, Redis, ETL, VSAM, Blockchain, Smart Contracts, Tezos, NFTs, Web3} \\
-     \textbf{Practices}{: CI/CD, Microservices, REST APIs, Agile/Scrum, DevOps, Monitoring, IaC} \\
-    }}
- \end{itemize}
-
-\vspace{-15pt}
 
 %-----------EXPERIENCE-----------
 \section{Experience}
@@ -155,30 +138,30 @@
       {Software Engineer Intern}{March 2025 -- Present}
       {California Department of Motor Vehicles}{Sacramento, CA}
       \resumeItemListStart
-        \resumeItem{Architected and deployed end-to-end ETL pipeline processing mainframe VSAM dataset exports for vehicle registrations and driver licenses, successfully migrating 198 million records to production RDS PostgreSQL database serving California Highway Patrol, FBI, and other federal law enforcement agencies.}
-        \resumeItem{Developed comprehensive data processing solution using AWS Lambda and Glue for initial bulk load and daily synchronization pipelines handling 200-300k daily records with upsert/delete operations.}
+      \resumeItem{Developed greenfield Java Spring internal service to modernize mainframe-based vehicle registration sticker printing, replacing outdated technician interfaces and streamlining document generation pipelines, processing \textbf{\$10 billion} in annual revenue and printing \textbf{3 million} registration stickers monthly.}
+      \resumeItem{Architected and deployed end-to-end ETL pipeline using AWS Lambda, Glue, and Apache Spark, processing mainframe VSAM dataset exports for vehicle registrations and driver licenses, successfully migrating \textbf{198 million} mainframe records to production RDS PostgreSQL database and handling \textbf{200-300k} daily records with upsert/delete operations serving \textbf{California Highway Patrol, FBI}, and other federal law enforcement agencies.}
         \resumeItem{Implemented entire infrastructure as code using Terraform, managing deployment lifecycle across dev, UAT, and production environments while supporting comprehensive UAT testing throughout development cycle.}
-        \resumeItem{Refactored and deployed distributed vehicle title management microservices blockchain system using TypeScript monorepo with 5 interconnected Tezos smart contracts (FA2 NFTs), implementing multitenant role-based access control and chain bridge worker pools for database-blockchain synchronization.}
-        \resumeItem{Deployed self-hosted private Tezos blockchain node infrastructure on Kubernetes using ECR and EKS, orchestrating containerized microservices with production-ready CI/CD pipelines and comprehensive monitoring.}
+	\resumeItem{Refactored and deployed distributed vehicle title management microservices blockchain system using TypeScript monorepo with 5 Tezos smart contracts (FA2 NFTs), implementing multitenant role-based access control and chain bridge worker pools for database-blockchain synchronization. Supporting \textbf{45 million} vehicle title NFTs in production.}
+        \resumeItem{Deployed self-hosted private Tezos blockchain node infrastructure via Kubernetes using ECR and EKS, orchestrating containerized microservices with ArgoCD pipelines and tiered monitoring.}
       \resumeItemListEnd
 
     \resumeSubheading
       {IT Infrastructure Intern}{June 2024 -- Aug. 2024}
       {MITER Brands -- Milgard Manufacturing}{Tacoma, WA}
       \resumeItemListStart
-      \resumeItem{Implemented APM pipeline optimizations in Site24x7 and New Relic, reducing alert redundancy by 60\% across 6 teams and 2 business units.}
-      \resumeItem{Developed REST API endpoint monitors identifying critical discrepancies, resulting in an average 20\% latency reduction due to increased observability.}
-      \resumeItem{Automated Active Directory compliance audits using PowerShell scripting, improving operational efficiency by 20\%.}
+        \resumeItem{Implemented APM pipeline optimizations in Site24x7 and New Relic, reducing alert redundancy by \textbf{60\%} across 6 teams and 2 business units.}
+        \resumeItem{Developed REST API endpoint monitors identifying critical vendor discrepancies, resulting in an average \textbf{20\%} latency reduction across hot paths.}
+        \resumeItem{Automated Active Directory compliance audits using PowerShell scripting, reducing manual audit time by \textbf{75\%}.}
       \resumeItemListEnd
 
-    \resumeSubheading
-      {Web Developer}{Aug. 2022 -- May 2023}
-      {Purdue University Office of Engagement}{West Lafayette, IN}
-      \resumeItemListStart
-      \resumeItem{Delivered full-stack research grant application platform using Agile Scrum methodology in 10-person development team.}
-      \resumeItem{Built RESTful API with Express.js and PostgreSQL using Prisma ORM, implementing federated SSO authentication.}
-      \resumeItem{Containerized application with Docker for deployment to Purdue University server cluster infrastructure.}
-      \resumeItemListEnd
+    % \resumeSubheading
+    %   {Web Developer}{Aug. 2022 -- May 2023}
+    %   {Purdue University Office of Engagement}{West Lafayette, IN}
+    %   \resumeItemListStart
+    %   \resumeItem{Delivered full-stack research grant application platform using Agile Scrum methodology in 10-person development team.}
+    %   \resumeItem{Built RESTful API with Express.js and PostgreSQL using Prisma ORM, implementing federated SSO authentication.}
+    %   \resumeItem{Containerized application with Docker for deployment to Purdue University server cluster infrastructure.}
+    %   \resumeItemListEnd
 
     % \resumeSubheading
     %   {IT Support Desk Intern}{March 2021 -- Aug. 2021}
@@ -191,6 +174,7 @@
 
   \resumeSubHeadingListEnd
 
+
 % -----------PROJECTS-----------
 \section{Projects}
   \resumeSubHeadingListStart
@@ -199,18 +183,30 @@
         \resumeItemListStart
         \resumeItem{Built statically-typed programming language (8,407 LOC) that compiles to readable COBOL, featuring complete compiler toolchain with lexer, recursive descent parser using Pratt parsing, and comprehensive AST for semantic analysis.}
         \resumeItem{Designed novel width-aware type system with compile-time COBOL PIC clause validation, automatic width inference for arithmetic expressions, and overflow detection for mainframe compatibility.}
-        \resumeItem{Implemented sophisticated code generation translating modern constructs (functions, structs, type inference) into structured COBOL with automatic temporary variable management.}
+        \resumeItem{Implemented code generation translating modern constructs (functions, structs, type inference) into structured COBOL with automatic temporary variable management.}
         \resumeItemListEnd
 
     \resumeProjectHeading
     {\textbf{Grace Orchestration Engine (graceinfra.org)} $|$ \emph{Go, Zowe CLI, DAG Execution, Mainframe Modernization}}{2024}
         \resumeItemListStart
-        \resumeItem{Engineered hybrid mainframe-cloud orchestration framework (8,366 LOC) modernizing COBOL workflows through declarative YAML configuration and Infrastructure-as-Code principles.}
+        \resumeItem{Engineered hybrid mainframe-cloud orchestration framework (8,366 LOC) modernizing mainframe workflows through declarative YAML configuration and Infrastructure-as-Code principles.}
         \resumeItem{Built DAG execution engine with concurrent job processing, dependency resolution, dynamic file/dataset resolution, and intelligent state management for complex multi-step mainframe-cloud workflows.}
-        \resumeItem{Implemented extensible plugin architecture supporting multiple job handlers (compile, linkedit, execute, shell) with automatic cleanup of temporary mainframe datasets and comprehensive error handling.}
+        \resumeItem{Implemented extensible plugin architecture supporting multiple job handlers (compile, linkedit, execute, shell) with automatic cleanup of temporary mainframe artifacts and comprehensive error handling.}
         \resumeItemListEnd
   \resumeSubHeadingListEnd
 
+
+%-----------SKILLS-----------
+\section{Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Go, Python, TypeScript, JavaScript, SQL, PostgreSQL, Java, HTML/CSS, YAML, JSON, Bash} \\
+     \textbf{Frameworks}{: React, Node.js, FastAPI, Express.js, Echo, GORM, GraphQL, Prisma, Model Context Protocol} \\
+     \textbf{Cloud/DevOps}{: AWS, Lambda, Glue, RDS, ECR, EKS, Kubernetes, Docker, Terraform, Git, GitHub Actions} \\
+     \textbf{Data/Blockchain}{: PostgreSQL, Redis, ETL, VSAM, Blockchain, Smart Contracts, Tezos, NFTs, Web3} \\
+     \textbf{Practices}{: CI/CD, Microservices, REST APIs, Agile/Scrum, DevOps, Monitoring, IaC} \\
+    }}
+ \end{itemize}
 
 
 %
